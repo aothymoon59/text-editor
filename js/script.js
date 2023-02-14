@@ -1,7 +1,7 @@
 function styleChange(id, value) {
   document.getElementById(id).addEventListener("click", function () {
     let textElement = document.getElementById("mainText");
-    textElement.classList.add(value);
+    textElement.classList.toggle(value);
   });
 }
 // text Bold
