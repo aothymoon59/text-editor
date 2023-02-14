@@ -1,5 +1,8 @@
 function styleChange(id, value) {
   document.getElementById(id).addEventListener("click", function () {
+    let btn = document.getElementById(id);
+    btn.classList.toggle("bg-amber-300");
+    btn.classList.toggle("rounded");
     let textElement = document.getElementById("mainText");
     textElement.classList.toggle(value);
   });
